@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right,#FFAAF7, #ffe4fc );
+}
+
+/* Seção Cabeçalho */
+
+.cabecalho {
+    padding: 1%;
+}
+
+.cabecalho-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cabecalho-imagem-logo {
+    border-radius: 100%;
+    width: 50%;
+}
+
+.cabecalho-container-contato {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho-texto-contato, .cabecalho-texto-whatsapp {
+    color: #BE68DC;
+    font-family: 'Arvo', serif;
+    font-size: 35px;
+    
+}
+
+.cabecalho-container-contato figure {
+    align-items: center;
+    display: flex;
+}
+
+.cabecalho-texto-whatsapp {
+    margin-left: 4%;
+    width: 65%;
+}
+
+.cabecalho-imagem-whatsapp {
+    width: 60%;
+}
+
+/* Seção Principal */
+
+.principal {
+    border-top: 3px solid #C9C38D;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.principal-container-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.principal-titulo {
+    color: #F950FD;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;   
+    text-align: center;
+}
+
+.principal-subtitulo {
+    background-clip: text;
+    background-color: #000;
+    color: #FF7DFF;
+    font-family: 'Arvo', serif;
+    font-size: 44px;
+    margin: 5% auto;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    width: 100%;
+}
+
+.principal-container-inst {
+    align-items: center;
+    display: flex;
+    margin: 2% auto;
+    width: 60%;
+}
+
+.principal-texto-inst {
+    color: #bd56bd;
+    font-size: 38px;
+    width: 80%;
+}
+
+.principal-container-inst figure {
+    width: 20%;
+}
+
+.principal-imagem-inst {
+    width: 60%;
+}
+
+.principal-triangulo {
+    text-align:right;
+}
+
+.principal-triangulo-imagem {
+    width: 90%;
+    animation-duration: 3s;
+    animation-name: direita-esquerda;
+}
+
+@keyframes direita-esquerda {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.rodape {
+    text-align: center;
+    padding: 2% 2% 0 2%;
+}
+
+.rodape-texto {
+    font-size: 28px;
+    color: #C9C38D;
+}
+
+.rodape-texto a {
+    color: #C9C38D;
+    text-decoration: none;
+}
